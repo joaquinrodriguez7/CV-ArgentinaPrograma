@@ -1,11 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@400;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400&display=swap');
 
 * {
     color: black;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+
     overflow-x: hidden;
 }
 
@@ -14,6 +15,10 @@ body {
     width: 150px;
     border-radius: 50%;
     border: 3px solid black;
+}
+
+#iconsHeader {
+    justify-content: space-around;
 }
 
 .material-symbols-outlined {
@@ -32,49 +37,6 @@ body {
         'opsz' 48
 }
 
-.btnInfo {
-    border: none;
-    background-color: transparent;
-}
-
-.m-0 {
-    margin: 0;
-}
-
-.p-0 {
-    padding: 0;
-}
-
-footer {
-    background-color: black;
-}
-
-footer img {
-    width: 24px;
-}
-
-footer a {
-    color: black !important;
-    text-decoration-color: black;
-    text-decoration-line: none;
-}
-
-.btnForm {
-    background-color: black;
-    border: 1px black solid;
-    color: white;
-    padding: 10px 24px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-}
-
-.bgNavBlack {
-    background-color: black !important;
-    color: white !important;
-}
-
 ul li a {
     color: white;
     text-decoration: none;
@@ -85,19 +47,6 @@ ul li a:hover {
     color: black;
     text-decoration: none;
 
-}
-
-nav button {
-    border: 1px solid white !important;
-    border-radius: 0% !important;
-}
-
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
-}
-
-.navbar-toggler:focus {
-    box-shadow: none !important;
 }
 
 .dropdown-menu {
@@ -118,8 +67,17 @@ nav button {
     width: 100%;
 }
 
-#iconsHeader {
-    justify-content: space-around;
+.btnInfo {
+    border: none;
+    background-color: transparent;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.p-0 {
+    padding: 0;
 }
 
 .modalCertificado {
@@ -148,7 +106,7 @@ nav button {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     text-align: center;
-    padding: 15px 25px;
+    padding: 15px 0;
 }
 
 .modalImg img {
@@ -178,7 +136,7 @@ nav button {
     background-color: white;
     border: 1px black solid;
     color: black;
-    padding: 4px 5px;
+    padding: 4px 6px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -190,8 +148,31 @@ nav button {
     background-color: black;
     border: 1px black solid;
     color: white;
-    padding: 4px 5px;
-    margin-top: 10px;
+}
+
+.btnForm {
+    background-color: black;
+    border: 1px black solid;
+    color: white;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+footer {
+    background-color: black;
+}
+
+footer img {
+    width: 24px;
+}
+
+footer a {
+    color: black !important;
+    text-decoration-color: black;
+    text-decoration-line: none;
 }
 
 @media (min-width: 576px) {
@@ -208,6 +189,7 @@ nav button {
         padding-bottom: 25px;
         border-bottom: 1px solid black;
         margin: 0 50px;
+        line-height: 28px;
     }
 
     header,
@@ -229,7 +211,10 @@ nav button {
         font-size: 32px !important;
     }
 
-
+    #btnCertificado,
+    #cerrarModal {
+        line-height: normal;
+    }
 }
 
 @media (min-width: 768px) {
@@ -244,59 +229,82 @@ nav button {
     .material-symbols-outlined {
         font-size: 40px !important;
     }
-    .modalImg{
+
+    .modalImg {
         width: 80%;
+        padding-top: 30px;
     }
 }
 
 @media (min-width: 992px) {
-    #contenedor{
+    #contenedor {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
-    #presentacion{
+
+    #presentacion {
         border: none;
         width: 60%;
-      
+        line-height: 30px;
     }
-    
+
     #estudios,
     #cursos,
     #expLaboral,
-    #aptitudes{
+    #aptitudes {
         margin: 50px 50px;
         background: linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 4px) calc(100% - 4px) no-repeat,
-            linear-gradient(290deg, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0.36) 30%, rgba(0,0,0,0.36) 59%, rgba(0,0,0,0.74) 100%);
+            linear-gradient(290deg, rgba(0, 0, 0, 0.74) 0%, rgba(0, 0, 0, 0.36) 30%, rgba(0, 0, 0, 0.36) 59%, rgba(0, 0, 0, 0.74) 100%);
         border-radius: 0px;
         padding: 5px;
         box-sizing: border-box;
         width: 70%;
-    }
-    
-    .modalImg{
-        width: 70%;
+        border-right: none;
+        line-height: 30px;
     }
 
-    ul li{
+    #estudios li strong,
+    #cursos li strong,
+    #expLaboral li strong {
+        font-size: 20px;
+    }
+
+    .modalImg {
+        width: 60%;
+        padding-top: 35px;
+    }
+
+    #btnCertificado,
+    #cerrarModal {
+        line-height: 30px;
+        font-size: 15px;
+        padding: 0 5px;
+    }
+
+    ul li {
         text-align: center;
-        list-style:square;
+        list-style: square;
         list-style-position: inside;
     }
 
-    #contacto input{
-        width: 30%;
+    #contacto {
+        width: 75%;
     }
-    #contacto textarea{
+
+    #contacto input {
         width: 50%;
     }
 
+    #contacto textarea {
+        width: 100%;
+    }
 }
 
 @media (min-width: 1024px) {
-    .modalImg{
-        width: 60%;
+    .modalImg {
+        width: 50%;
+        padding-top: 40px;
     }
 }
 
