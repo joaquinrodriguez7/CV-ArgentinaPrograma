@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+* {
+    color: black;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+}
+
+.img-cv {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' -25,
+        'opsz' 48
+}
+
+.material-symbols-outlined:hover {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 200,
+        'opsz' 48
+}
+
+.btnInfo {
+    border: none;
+    background-color: transparent;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+footer {
+    background-color: black;
+}
+
+footer img {
+    width: 24px;
+}
+
+footer a {
+    color: black !important;
+    text-decoration-color: black;
+    text-decoration-line: none;
+}
+
+.btnForm {
+    background-color: black;
+    border: 1px black solid;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.bgNavBlack {
+    background-color: black !important;
+    color: white !important;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+
+}
+
+ul li a:hover {
+    color: black;
+    text-decoration: none;
+
+}
+
+nav button {
+    border: 1px solid white !important;
+    border-radius: 0% !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.dropdown-menu {
+    background-color: black !important;
+    border-radius: 0 !important;
+}
+
+.btnMenu {
+    background-color: black !important;
+    border: 1px black solid;
+    color: white;
+    padding: 6px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: none !important;
+    width: 100%;
+}
+
+#iconsHeader {
+    justify-content: space-around;
+}
+
+.modalCertificado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+    height: 100vh;
+    width: 100vw;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.mostrar {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modalImg {
+    background-color: white;
+    width: 90%;
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 15px 25px;
+}
+
+.modalImg img {
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+#btnCertificado {
+    background-color: white;
+    border: 1px black solid;
+    color: black;
+    padding: 4px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+#btnCertificado:hover {
+    background-color: black;
+    border: 1px black solid;
+    color: white;
+}
+
+#cerrarModal {
+    background-color: white;
+    border: 1px black solid;
+    color: black;
+    padding: 4px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+#cerrarModal:hover {
+    background-color: black;
+    border: 1px black solid;
+    color: white;
+    padding: 4px 5px;
+    margin-top: 10px;
+}
+
+@media (min-width: 576px) {
+
+    header,
+    #presentacion,
+    #estudios,
+    #cursos,
+    #expLaboral,
+    #aptitudes,
+    #contacto {
+        padding: 0 50px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        border-bottom: 1px solid black;
+        margin: 0 50px;
+    }
+
+    header,
+    #contacto {
+        border-bottom: none;
+    }
+
+    #iconsHeader {
+        justify-content: space-evenly;
+    }
+
+    header p {
+        font-size: 25px;
+        margin-top: 20px;
+
+    }
+
+    .material-symbols-outlined {
+        font-size: 32px !important;
+    }
+
+
+}
+
+@media (min-width: 768px) {
+    #p-info {
+        font-size: 28px;
+    }
+
+    .btnMenu {
+        font-size: 20px;
+    }
+
+    .material-symbols-outlined {
+        font-size: 40px !important;
+    }
+    .modalImg{
+        width: 80%;
+    }
+}
+
+@media (min-width: 992px) {
+    #contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #presentacion{
+        border: none;
+        width: 60%;
+      
+    }
+    
+    #estudios,
+    #cursos,
+    #expLaboral,
+    #aptitudes{
+        margin: 50px 50px;
+        background: linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 4px) calc(100% - 4px) no-repeat,
+            linear-gradient(290deg, rgba(0,0,0,0.74) 0%, rgba(0,0,0,0.36) 30%, rgba(0,0,0,0.36) 59%, rgba(0,0,0,0.74) 100%);
+        border-radius: 0px;
+        padding: 5px;
+        box-sizing: border-box;
+        width: 70%;
+    }
+    
+    .modalImg{
+        width: 70%;
+    }
+
+    ul li{
+        text-align: center;
+        list-style:square;
+        list-style-position: inside;
+    }
+
+    #contacto input{
+        width: 30%;
+    }
+    #contacto textarea{
+        width: 50%;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .modalImg{
+        width: 60%;
+    }
+}
+
+@media (min-width: 1200px) {}
